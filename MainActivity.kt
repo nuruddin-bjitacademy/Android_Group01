@@ -36,6 +36,9 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
+	//one int initiated
+	val amount = 100
+
         val tipPercentage = when (binding.tipOptions.checkedRadioButtonId) {
             R.id.option_twenty_percent -> 0.20
             R.id.option_eighteen_percent -> 0.18
