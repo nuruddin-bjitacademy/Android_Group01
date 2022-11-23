@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.graphicless.tiptime.databinding.ActivityMainBinding
 import java.text.NumberFormat
 
-private const val TAG = "MainActivity"
+private const val TAG = "main" // updated the tag by asraful
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculateTip() {
 
-        val unUsed: String
+        //val unUsed: String // commented out the unused variable
 
         val stringInTextField = binding.costOfService.text.toString()
         val cost = stringInTextField.toDoubleOrNull()
