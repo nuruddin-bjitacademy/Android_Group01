@@ -2,6 +2,17 @@
 class BinarySearch
 {
     //TODO: implement binarySearch function
+   int binarySearch(int my_arr[], int left, int right, int x){
+      if (right >= left){
+         int mid = left + (right - left) / 2;
+         if (my_arr[mid] == x)
+         return mid;
+         if (my_arr[mid] > x)
+         return rec_bin_search(my_arr, left, mid - 1, x);
+         return rec_bin_search(my_arr, mid + 1, right, x);
+      }
+      return -1;
+   }
   
     // Driver method to test above
     public static void main(String args[])
