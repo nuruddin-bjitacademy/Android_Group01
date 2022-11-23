@@ -22,9 +22,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculateTip() {
-
-        val unUsed: String
-
+	//removed some unused variable by kamrul
         val stringInTextField = binding.costOfService.text.toString()
         val cost = stringInTextField.toDoubleOrNull()
 
