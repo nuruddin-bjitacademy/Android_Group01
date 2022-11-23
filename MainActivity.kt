@@ -40,6 +40,8 @@ class MainActivity : AppCompatActivity() {
 	fun check():Boolean{
 	return identity}
 
+	//another variable
+	val laptopAmount = 20
 	//one int initiated
 	val amount = 100
 
