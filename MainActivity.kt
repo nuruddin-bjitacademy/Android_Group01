@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculateTip() {
 
-        val unUsed: String
+        //here unused variable added.
+	//clean now ok.
 
         val stringInTextField = binding.costOfService.text.toString()
         val cost = stringInTextField.toDoubleOrNull()
@@ -34,7 +35,6 @@ class MainActivity : AppCompatActivity() {
             binding.tipResult.text = ""
             return
         }
-
         val tipPercentage = when (binding.tipOptions.checkedRadioButtonId) {
             R.id.option_twenty_percent -> 0.20
             R.id.option_eighteen_percent -> 0.18
