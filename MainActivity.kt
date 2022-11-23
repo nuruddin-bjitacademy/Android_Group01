@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.graphicless.tiptime.databinding.ActivityMainBinding
+
 import java.text.NumberFormat
 
 private const val TAG = "MainActivity"
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculateTip() {
 
-        val unUsed: String
+	//removed some unused variable by kamrul
 
         val stringInTextField = binding.costOfService.text.toString()
         val cost = stringInTextField.toDoubleOrNull()
@@ -37,6 +38,9 @@ class MainActivity : AppCompatActivity() {
 	
 	//one variable initiated
 	val identity=true
+
+	//one int initiated
+	val amount = 100
 
         val tipPercentage = when (binding.tipOptions.checkedRadioButtonId) {
             R.id.option_twenty_percent -> 0.20
