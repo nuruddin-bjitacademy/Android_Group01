@@ -24,7 +24,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculateTip() {
 
+  //here unused variable added.
+	//clean now ok.
 	//removed some unused variable by kamrul
+
 
         val stringInTextField = binding.costOfService.text.toString()
         val cost = stringInTextField.toDoubleOrNull()
@@ -38,6 +41,8 @@ class MainActivity : AppCompatActivity() {
 	
 	//one variable initiated
 	val identity=true
+	fun check():Boolean{
+	return identity}
 
 	//one int initiated
 	val amount = 100
